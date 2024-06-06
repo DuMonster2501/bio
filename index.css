@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(#615876,#512d81);
+    margin: 0;
+    top: 0;
+    animation: init 1000ms;
+}
+
+#particles-js {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-container {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-rec {
+    width: 400px;
+    height: 350px;
+    background: linear-gradient(#393040, #4f3253);
+    border-radius: 8px;
+    will-change: filter;
+    transition: filter 500ms;
+}
+
+.bio-rec:hover {
+    filter: drop-shadow(0 0 2em #3e1672);
+}
+
+.profile-avatar img{
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile-elements {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.profile-name {
+    color: #ccc;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* margin-left: 20px; */
+}
+
+.profile-description {
+    margin-top: 10px;
+    color: #ffffff7e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-accounts img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-accounts-container {
+    position: absolute;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+.github:hover {
+    will-change: filter;
+    transition: filter 300ms;
+    filter: drop-shadow(0 0 2em #1d2024);
+}
+.discord:hover {
+    will-change: filter;
+    transition: filter 300ms;
+    filter: drop-shadow(0 0 2em #5865f2);
+}
+.spotify:hover {
+    will-change: filter;
+    transition: filter 300ms;
+    filter: drop-shadow(0 0 2em #1ed760);
+}
+
+@keyframes init {
+    0% { 
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
